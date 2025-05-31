@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://companero.io/</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://companero.io/assets/images/hero/phone.webp</image:loc>
+      <image:title>Compañero Ridesharing App Interface</image:title>
+      <image:caption>Open source ridesharing platform with zero commission fees</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://companero.io/about</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://companero.io/assets/images/about/author-3.png</image:loc>
+      <image:title>Maksym Kopytovskyi - Founder of Compañero</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://companero.io/404.html</loc>
+    <lastmod>2024-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
   </url>
 </urlset> 

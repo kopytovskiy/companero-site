@@ -2,5 +2,19 @@ User-agent: *
 Allow: /
 Disallow: /assets/js/
 Disallow: /assets/css/
+Allow: /assets/images/
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
 
 Sitemap: https://companero.io/sitemap.xml 
