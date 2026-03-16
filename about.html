@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>About Compañero - The Story Behind Our Open Source Ridesharing Platform</title>
-    <meta name="description" content="Learn about Compañero's journey from a small-town solution to a global open-source ridesharing platform. Discover our mission to make transportation accessible to all." />
+    <title>About Companero - The Story Behind Our Open Source Ridesharing Platform</title>
+    <meta name="description" content="Learn about Companero's journey from a small-town solution to a global open-source ridesharing platform. Discover our mission to make transportation accessible to all." />
     <meta name="keywords" content="about companero, ridesharing story, open source taxi history, companero founder" />
+    <title>About Companero | Open-Source Ridesharing for Communities</title>
+    <meta name="description" content="Read the Companero story, mission, and contributors behind an open-source ridesharing platform built for local communities." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="About Compañero - Our Open Source Ridesharing Story" />
-    <meta property="og:description" content="From small-town solution to global open-source ridesharing platform - the Compañero story." />
+    <meta property="og:title" content="About Companero - Our Open Source Ridesharing Story" />
+    <meta property="og:description" content="From small-town solution to global open-source ridesharing platform - the Companero story." />
     <meta property="og:image" content="assets/images/about/author-3.png" />
+    <meta property="og:title" content="About Companero - Our Open Source Ridesharing Story" />
+    <meta property="og:description" content="From a small-town solution to a global open-source ridesharing platform: the Companero story." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://companero.io/assets/images/about/author-3.png" />
     <meta property="og:url" content="https://companero.io/about" />
+    <meta property="og:site_name" content="Companero" />
+    <meta property="og:locale" content="en_US" />
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="About Compañero - Our Story" />
-    <meta name="twitter:description" content="From small-town solution to global open-source ridesharing platform - the Compañero story." />
+    <meta name="twitter:title" content="About Companero - Our Story" />
+    <meta name="twitter:description" content="From small-town solution to global open-source ridesharing platform - the Companero story." />
     <meta name="twitter:image" content="assets/images/about/author-3.png" />
+    <meta name="twitter:title" content="About Companero - Our Story" />
+    <meta name="twitter:description" content="From a small-town solution to a global open-source ridesharing platform: the Companero story." />
+    <meta name="twitter:image" content="https://companero.io/assets/images/about/author-3.png" />
     
     <link rel="canonical" href="https://companero.io/about" />
+    <link rel="alternate" href="https://companero.io/about" hreflang="en" />
+    <link rel="alternate" href="https://companero.io/about" hreflang="x-default" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
     <!-- ========================= CSS here ========================= -->
@@ -33,6 +48,54 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/ribbon.css" />
 
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://companero.io/#website",
+          "url": "https://companero.io/",
+          "name": "Companero"
+        },
+        {
+          "@type": "AboutPage",
+          "@id": "https://companero.io/about#aboutpage",
+          "url": "https://companero.io/about",
+          "name": "About Companero",
+          "isPartOf": {
+            "@id": "https://companero.io/#website"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://companero.io/#organization",
+          "name": "Companero",
+          "url": "https://companero.io/",
+          "logo": "https://companero.io/assets/images/logo/logo.webp",
+          "sameAs": [
+            "https://github.com/kopytovskiy/companero-bot",
+            "https://www.instagram.com/companero.io",
+            "https://www.facebook.com/61561244200934/",
+            "https://t.me/CompaneroUpdates"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Maksym Kopytovskyi",
+          "jobTitle": "Founder",
+          "worksFor": {
+            "@id": "https://companero.io/#organization"
+          },
+          "sameAs": [
+            "https://github.com/kopytovskiy"
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -65,7 +128,7 @@
                         <nav class="navbar navbar-expand-lg">
                             <!--<div class="cr cr-top cr-left cr-sticky cr-ua">&nbsp</div>-->
                             <a class="navbar-brand" href="/">
-                                <img src="assets/images/logo/logo.png" alt="Logo">
+                                <img src="assets/images/logo/logo.webp" alt="Companero logo">
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -77,23 +140,20 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a href="/"
-                                            aria-label="Toggle navigation">Home</a>
+                                        <a href="/">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="https://t.me/CompaneroUpdates"
-                                            aria-label="Toggle navigation">Feed</a>
+                                        <a href="https://t.me/CompaneroUpdates">Feed</a>
                                     </li>
                                 
                                     <li class="nav-item">
-                                        <a href="https://t.me/CompaneroChat"
-                                            aria-label="Toggle navigation">Chat</a>
+                                        <a href="https://t.me/CompaneroChat">Chat</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/about" class="active" aria-label="Toggle navigation">About Us</a>
+                                        <a href="/about" class="active">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="https://t.me/CompaneroSupport" aria-label="Toggle navigation">Support</a>
+                                        <a href="https://t.me/CompaneroSupport">Support</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
@@ -113,11 +173,11 @@
     <section id="home" class="hero-area about">
         <div class="container">
             <div class="center">
-                <img class="wow zoomIn profile-photo" data-wow-delay=".2s" src="assets/images/about/author-3.png" alt="ProfilePhoto">
+                <img class="wow zoomIn profile-photo" data-wow-delay=".2s" src="assets/images/about/author-3.png" alt="Companero founder profile photo" fetchpriority="high" decoding="async">
             </div>
             <br/>
             <div class="row center wow zoomIn" data-wow-delay=".4s">
-                <i>It's Max, Founder "Compañero"
+                <i>It's Max, Founder "Companero"
                     <br/>
                     <i class="lni lni-map-marker"></i> Kyiv, Ukraine
                 </i>
@@ -129,15 +189,15 @@
             </div>
             <div class="row center how-it-started wow fadeInUp" data-wow-delay=".8s">
                 <p>
-                    Hi there! I'm Max, the founder of Compañero, an open-source application for hitchhiking and ridesharing. Let me tell you how it all started.
+                    Hi there! I'm Max, the founder of Companero, an open-source application for hitchhiking and ridesharing. Let me tell you how it all started.
                     
                     A couple of years ago, I moved to a small city in the middle of nowhere. Coming from a big city, I was used to having various taxi and ridesharing options at my fingertips. However, I quickly realized that none of the popular ridesharing apps operated there. This made getting around town a real challenge, especially since public transportation was limited and taxi very expensive. Frustrated by the lack of options, I decided to take matters into my own hands. 
                     
-                    I've always been passionate about coding, so I thought, "Why not create a simple app that connects drivers and riders in our community?" That's how Compañero was born. I started small, developing a basic version of the app that allowed users to request rides they needed and drivers could accept them. I shared it in local Facebook groups, Telegram chats, and even put up stickers with QR code at my friends' bar and several barbershops. The response was incredible! People from the town were excited to have a local solution that addressed their transportation needs. As more people started using Compañero, I continued to improve the app based on user feedback. I added features like a recommended price calculation, scheduled rides, and a rating system. The community aspect of Compañero really took off, with users organizing carpools for work, school, and events.
+                    I've always been passionate about coding, so I thought, "Why not create a simple app that connects drivers and riders in our community?" That's how Companero was born. I started small, developing a basic version of the app that allowed users to request rides they needed and drivers could accept them. I shared it in local Facebook groups, Telegram chats, and even put up stickers with QR code at my friends' bar and several barbershops. The response was incredible! People from the town were excited to have a local solution that addressed their transportation needs. As more people started using Companero, I continued to improve the app based on user feedback. I added features like a recommended price calculation, scheduled rides, and a rating system. The community aspect of Companero really took off, with users organizing carpools for work, school, and events.
                     
-                    Seeing the positive impact Compañero had on our small city, I realized that many other communities around the world might be facing similar challenges. That's when I decided to make Compañero available worldwide. I used to share the app via different chats all over the world. It was a great idea, but still took a lot of effort. So, I decided to make my app open-source! By making it open-source, I hope to encourage developers from different regions to adapt Compañero to their local needs and contribute to its growth. I believe this decision will lead to some amazing collaborations and innovations I never could have imagined on my own.
+                    Seeing the positive impact Companero had on our small city, I realized that many other communities around the world might be facing similar challenges. That's when I decided to make Companero available worldwide. I used to share the app via different chats all over the world. It was a great idea, but still took a lot of effort. So, I decided to make my app open-source! By making it open-source, I hope to encourage developers from different regions to adapt Companero to their local needs and contribute to its growth. I believe this decision will lead to some amazing collaborations and innovations I never could have imagined on my own.
                     
-                    Today, Compañero is being used in small cities and rural areas across the globe, helping connect people and make transportation more accessible. It's been an incredible journey, and I'm excited to see how Compañero continues to evolve and serve communities worldwide.</p>
+                    Today, Companero is being used in small cities and rural areas across the globe, helping connect people and make transportation more accessible. It's been an incredible journey, and I'm excited to see how Companero continues to evolve and serve communities worldwide.</p>
             </div>
         </div>
     </section>
@@ -150,9 +210,9 @@
                 <div class="col-12">
                     <div class="section-title">
                         <h3 class="wow zoomIn" data-wow-delay=".2s">Our Dream Team</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Here all our contributors</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our Contributors</h2>
                         <div class="center">
-                            <img class="wow zoomIn profile-photo-small" data-wow-delay=".6s" src="assets/images/about/author-3.png" alt="ProfilePhoto">
+                            <img class="wow zoomIn profile-photo-small" data-wow-delay=".6s" src="assets/images/about/author-3.png" alt="Maksym Kopytovskyi profile photo" loading="lazy" decoding="async">
                         </div>
                         <div class="center wow zoomIn" data-wow-delay=".6s"><a href="https://github.com/kopytovskiy">Max</a></div>
                         <br><br>
@@ -193,7 +253,7 @@
                         <div class="single-footer f-about">
                             <div class="logo">
                                 <a href="/">
-                                    <img src="assets/images/logo/white-logo.png" alt="#">
+                                    <img src="assets/images/logo/white-logo.webp" alt="Companero logo" loading="lazy" decoding="async">
                                 </a>
                             </div>
                             <p>Making the world a better place.</p>
@@ -205,8 +265,9 @@
                             </ul>
                             <p class="copyright-text">Designed and Developed by <a href="https://uideck.com/"
                                     rel="nofollow" target="_blank">UIdeck</a>
+                                    rel="nofollow noopener noreferrer" target="_blank">UIdeck</a>
                                     <br>
-                                    Modified by Compañero
+                                    Modified by Companero
                             </p>
                             
                         </div>
