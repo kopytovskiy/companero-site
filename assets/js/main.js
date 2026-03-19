@@ -80,6 +80,85 @@ Author: GrayGrids
     // WOW active
     new WOW().init();
 
+    function initHeroTyping() {
+        var wordContainer = document.querySelector('.hero-typing-word');
+        if (!wordContainer) {
+            return;
+        }
+        var wordElement = wordContainer.querySelector('.hero-typing-text') || wordContainer;
+
+        var words = ['Hitchhiking.', 'Ridesharing.'];
+        var timings = {
+            typing: 100,
+            deleting: 65,
+            holdAfterType: 1200,
+            holdAfterDelete: 300,
+            defaultStartDelay: 1400,
+        };
+        var maxLength = words.reduce(function (longest, current) {
+            return Math.max(longest, current.length);
+        }, 0);
+
+        wordContainer.style.minWidth = maxLength + 'ch';
+
+        var reducedMotion = window.matchMedia &&
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (reducedMotion) {
+            wordElement.textContent = words[0];
+            wordContainer.classList.add('hero-typing-static');
+            return;
+        }
+
+        var heading = wordContainer.closest('h1');
+        var wowDelay = 0;
+        if (heading) {
+            var delayAttr = heading.getAttribute('data-wow-delay') || '';
+            var delayValue = parseFloat(delayAttr.replace('s', ''));
+            if (!isNaN(delayValue)) {
+                wowDelay = delayValue * 1000;
+            }
+        }
+
+        var startDelay = Math.max(timings.defaultStartDelay, wowDelay + 1000);
+        var wordIndex = 0;
+        var charIndex = 0;
+        var deleting = false;
+
+        wordElement.textContent = '';
+
+        function tick() {
+            var currentWord = words[wordIndex];
+
+            if (deleting) {
+                charIndex = Math.max(charIndex - 1, 0);
+            } else {
+                charIndex = Math.min(charIndex + 1, currentWord.length);
+            }
+
+            wordElement.textContent = currentWord.substring(0, charIndex);
+
+            if (!deleting && charIndex === currentWord.length) {
+                deleting = true;
+                window.setTimeout(tick, timings.holdAfterType);
+                return;
+            }
+
+            if (deleting && charIndex === 0) {
+                deleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                window.setTimeout(tick, timings.holdAfterDelete);
+                return;
+            }
+
+            window.setTimeout(tick, deleting ? timings.deleting : timings.typing);
+        }
+
+        window.setTimeout(tick, startDelay);
+    }
+
+    initHeroTyping();
+
     let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
     filterButtons.forEach(e =>
         e.addEventListener('click', () => {
