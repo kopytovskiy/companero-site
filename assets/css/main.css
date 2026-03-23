@@ -1060,6 +1060,10 @@ ol {
   font-size: 15px;
 }
 
+.about-page .section-title .section-label {
+  color: #ff6b81;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title {
     padding: 0px 200px;
