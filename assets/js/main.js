@@ -128,6 +128,8 @@ Author: GrayGrids
         wordElement.textContent = '';
 
         function tick() {
+            wordContainer.classList.remove('hero-typing-caret-idle');
+
             var currentWord = words[wordIndex];
 
             if (deleting) {
@@ -140,6 +142,7 @@ Author: GrayGrids
 
             if (!deleting && charIndex === currentWord.length) {
                 deleting = true;
+                wordContainer.classList.add('hero-typing-caret-idle');
                 window.setTimeout(tick, timings.holdAfterType);
                 return;
             }
