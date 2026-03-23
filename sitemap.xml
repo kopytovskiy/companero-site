@@ -3,9 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://companero.io/</loc>
-    <lastmod>2026-03-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-03-23</lastmod>
     <image:image>
       <image:loc>https://companero.io/assets/images/hero/phone.webp</image:loc>
       <image:title>Companero Ridesharing App Interface</image:title>
@@ -14,12 +12,11 @@
   </url>
   <url>
     <loc>https://companero.io/about</loc>
-    <lastmod>2026-03-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-03-23</lastmod>
     <image:image>
       <image:loc>https://companero.io/assets/images/about/author-3.png</image:loc>
       <image:title>Maksym Kopytovskyi - Founder of Companero</image:title>
+      <image:caption>Founder Maksym Kopytovskyi and the story behind Companero open-source ridesharing</image:caption>
     </image:image>
   </url>
 </urlset>
