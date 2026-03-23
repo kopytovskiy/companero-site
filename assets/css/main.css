@@ -1728,6 +1728,7 @@ ol {
 }
 
 .faq-section .accordion-button:focus {
+  border-color: rgba(0, 0, 0, .125);
   box-shadow: none;
 }
 
