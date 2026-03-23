@@ -1,0 +1,19 @@
+# Companero
+> Companero is a free, open-source ridesharing platform built around Telegram communities. It is designed as a zero-commission alternative to commercial taxi apps, helping drivers and passengers coordinate rides directly without platform fees. The project emphasizes privacy-friendly coordination, broad accessibility, and community-driven growth, with adoption in small cities and rural areas where mainstream mobility services are often limited.
+
+## Key Pages
+- [Home](https://companero.io/): Product overview, features, and how to get started
+- [About](https://companero.io/about): Origin story, mission, and founder background
+
+## Key Facts
+- Zero commission fees for drivers and passengers
+- Privacy-focused, anonymous ride coordination through Telegram workflows
+- Open-source project on GitHub: https://github.com/kopytovskiy/companero-bot
+- Operates via Telegram bot: https://t.me/CompaneroBot
+- Multilingual experience in English, Spanish, Ukrainian, Portuguese, French, and German
+- Founded in Ukraine by Maksym Kopytovskyi
+- Used by communities globally, especially in smaller cities and rural regions
+
+## Contact
+- Telegram support: https://t.me/CompaneroSupport
+- Updates channel: https://t.me/CompaneroUpdates

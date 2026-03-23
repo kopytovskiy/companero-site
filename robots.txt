@@ -14,4 +14,16 @@ Allow: /
 User-agent: Twitterbot
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: https://companero.io/sitemap.xml
