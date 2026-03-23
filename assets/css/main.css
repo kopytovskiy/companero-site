@@ -1713,6 +1713,29 @@ ol {
   }
 }
 
+.faq-section {
+  background-color: #fff;
+  padding-top: 0;
+}
+
+.faq-section .section-title {
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.faq-section .accordion-item {
+  border-color: #eee;
+}
+
+.faq-section .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: #fff5f7;
+  color: #ff6b81;
+}
+
 .navbar-expand-lg .navbar-nav {
   margin: 0;
   margin-left: auto !important;

@@ -84,6 +84,57 @@
           "sameAs": [
             "https://github.com/kopytovskiy"
           ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://companero.io/about#faq",
+          "url": "https://companero.io/about#faq",
+          "name": "Companero FAQ",
+          "isPartOf": {
+            "@id": "https://companero.io/#website"
+          },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Companero?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Companero is a free, open-source ridesharing platform that runs through Telegram via @CompaneroBot. It connects drivers and passengers without platform commission fees."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does Companero work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Passengers can post ride requests by selecting pickup and drop-off points on the map, then choosing the date and time. All active drivers within a 25 km radius will receive requests for immediate rides. If a passenger schedules a ride for later, all drivers within a 125 km radius will receive the request. Companero automatically suggests a price based on the distance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is Companero available?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Companero works globally anywhere Telegram is available. It supports six languages: English, Spanish, Ukrainian, Portuguese, French, and German."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Companero free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Companero is absolutely free to use and charges zero commission fees for both drivers and passengers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who built Companero?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Companero was created in 2023 by one person - Max. After commercial ridesharing apps failed to serve smaller cities around the world. The source code is publicly available on GitHub under an open-source license."
+              }
+            }
+          ]
         }
       ]
     }
@@ -177,7 +228,7 @@
 
             <br/><br/>
             <div class="row center wow fadeInUp" data-wow-delay=".6s">
-                <h3>How it get started</h3>
+                <h3>How Companero Started</h3>
             </div>
             <div class="row center how-it-started wow fadeInUp" data-wow-delay=".8s">
                 <p>
@@ -194,6 +245,100 @@
         </div>
     </section>
     <!-- End Hero Area -->
+
+    <!-- Start FAQ Area -->
+    <section id="faq" class="faq-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">FAQ</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Frequently Asked Questions</h2>
+                    </div>
+                    <div class="accordion wow fadeInUp" data-wow-delay=".6s" id="aboutFaqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+                                    What is Companero?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="faqHeadingOne" data-bs-parent="#aboutFaqAccordion">
+                                <div class="accordion-body">
+                                    Companero is a free, open-source ridesharing platform that runs through Telegram via
+                                    <a href="https://t.me/CompaneroBot" target="_blank">@CompaneroBot</a>. It connects drivers and passengers without platform commission fees.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                    How does Companero work?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                                data-bs-parent="#aboutFaqAccordion">
+                                <div class="accordion-body">
+                                    Passengers can post ride requests by selecting pickup and drop-off points on the map, then choosing the date and time. All active drivers within a 25 km radius will receive requests for immediate rides.
+
+                                    If a passenger schedules a ride for later, all drivers within a 125 km radius will receive the request.
+                                    
+                                    Companero automatically suggests a price based on the distance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                    Where is Companero available?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingThree" data-bs-parent="#aboutFaqAccordion">
+                                <div class="accordion-body">
+                                    Companero works globally anywhere Telegram is available. It supports six languages:
+                                    English, Spanish, Ukrainian, Portuguese, French, and German.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                                    Is Companero free?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour"
+                                data-bs-parent="#aboutFaqAccordion">
+                                <div class="accordion-body">
+                                    Yes. Companero is absolutely free to use and charges zero commission fees for both drivers and
+                                    passengers.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                                    Who built Companero?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive"
+                                data-bs-parent="#aboutFaqAccordion">
+                                <div class="accordion-body">
+                                    Companero was created in 2023 by one person - Max. After commercial ridesharing apps failed to serve smaller cities around the world. The source code is publicly available on GitHub under an open-source license.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End FAQ Area -->
 
     <!-- Start Features Area -->
     <section id="features" class="features section">
