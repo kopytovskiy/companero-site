@@ -14,20 +14,25 @@
     <meta property="og:description" content="Free, anonymous, and open-source ridesharing platform with zero commission fees." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://companero.io/assets/images/hero/phone.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://companero.io/" />
     <meta property="og:site_name" content="Companero" />
     <meta property="og:locale" content="en_US" />
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Companero - Open Source Ridesharing" />
     <meta name="twitter:description" content="Free, anonymous, and open-source ridesharing platform with zero commission fees." />
     <meta name="twitter:image" content="https://companero.io/assets/images/hero/phone.webp" />
-    
+
     <link rel="canonical" href="https://companero.io/" />
-    <link rel="alternate" href="https://companero.io/" hreflang="en" />
-    <link rel="alternate" href="https://companero.io/" hreflang="x-default" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="assets/images/hero/phone.webp" fetchpriority="high" />
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -54,7 +59,12 @@
           "@id": "https://companero.io/#organization",
           "name": "Companero",
           "url": "https://companero.io/",
-          "logo": "https://companero.io/assets/images/logo/logo.webp",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://companero.io/assets/images/logo/logo.webp"
+          },
+          "description": "Companero is a free, open-source ridesharing platform operating via Telegram with zero commission fees, supporting communities worldwide.",
+          "foundingDate": "2023",
           "sameAs": [
             "https://github.com/kopytovskiy/companero-bot",
             "https://www.instagram.com/companero.io",
@@ -66,18 +76,28 @@
           "@type": "SoftwareApplication",
           "@id": "https://companero.io/#app",
           "name": "Companero",
+          "description": "A free, open-source ridesharing platform that operates through Telegram with zero commission fees. Supports English, Spanish, Ukrainian, Portuguese, French, and German.",
           "applicationCategory": "TransportationApplication",
           "operatingSystem": "Android, iOS, Web",
           "url": "https://companero.io/",
+          "downloadUrl": "https://t.me/CompaneroBot",
+          "inLanguage": ["en", "es", "uk", "pt", "fr", "de"],
+          "featureList": "Zero commission fees, Anonymous ride coordination, Map-based location, Automated price suggestion, Scheduled rides, Driver rating system",
+          "softwareHelp": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/kopytovskiy/companero-bot"
+          },
           "publisher": {
             "@id": "https://companero.io/#organization"
+          },
+          "author": {
+            "@id": "https://companero.io/about#founder"
           },
           "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
-          },
-          "description": "An open-source ridesharing platform with zero commission fees and anonymous ride coordination."
+          }
         }
       ]
     }
@@ -593,24 +613,25 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/wow.min.js" defer></script>
+    <script src="assets/js/tiny-slider.js" defer></script>
+    <script src="assets/js/glightbox.min.js" defer></script>
+    <script src="assets/js/count-up.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 
     <script type="text/javascript">
-
-        //====== counter up 
-        var cu = new counterUp({
-            start: 0,
-            duration: 2000,
-            intvalues: true,
-            interval: 100,
-            append: " ",
+        document.addEventListener('DOMContentLoaded', function () {
+            //====== counter up
+            var cu = new counterUp({
+                start: 0,
+                duration: 2000,
+                intvalues: true,
+                interval: 100,
+                append: " ",
+            });
+            cu.start();
         });
-        cu.start();
     </script>
 </body>
 

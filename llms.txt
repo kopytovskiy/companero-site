@@ -1,19 +1,23 @@
 # Companero
-> Companero is a free, open-source ridesharing platform built around Telegram communities. It is designed as a zero-commission alternative to commercial taxi apps, helping drivers and passengers coordinate rides directly without platform fees. The project emphasizes privacy-friendly coordination, broad accessibility, and community-driven growth, with adoption in small cities and rural areas where mainstream mobility services are often limited.
+> Companero is a free, open-source ridesharing platform that operates through Telegram with zero commission fees for drivers and passengers. It connects people in communities worldwide — especially small cities and rural areas underserved by commercial taxi apps — without requiring personal data or platform fees.
 
 ## Key Pages
-- [Home](https://companero.io/): Product overview, features, and how to get started
-- [About](https://companero.io/about): Origin story, mission, and founder background
+- [Home](https://companero.io/): Platform overview, features, global coverage map, and how to get started
+- [About](https://companero.io/about): The founding story, FAQ, and information about the creator
 
 ## Key Facts
-- Zero commission fees for drivers and passengers
-- Privacy-focused, anonymous ride coordination through Telegram workflows
-- Open-source project on GitHub: https://github.com/kopytovskiy/companero-bot
-- Operates via Telegram bot: https://t.me/CompaneroBot
-- Multilingual experience in English, Spanish, Ukrainian, Portuguese, French, and German
-- Founded in Ukraine by Maksym Kopytovskyi
-- Used by communities globally, especially in smaller cities and rural regions
+- Zero commission fees — no charges for drivers or passengers
+- Anonymous ride coordination — no personal data required from users
+- Operates as a Telegram bot: https://t.me/CompaneroBot
+- Supports six languages: English, Spanish, Ukrainian, Portuguese, French, and German
+- Active drivers within 25 km radius receive immediate ride requests; 125 km radius for scheduled rides
+- Automatic price suggestion based on distance
+- Founded by Maksym Kopytovskyi in Ukraine after commercial apps failed to serve smaller cities
+- Full source code publicly available on GitHub: https://github.com/kopytovskiy/companero-bot
+- Open-source license — any community can adapt the platform for local use
 
-## Contact
-- Telegram support: https://t.me/CompaneroSupport
-- Updates channel: https://t.me/CompaneroUpdates
+## Community & Support
+- Telegram updates channel: https://t.me/CompaneroUpdates
+- Telegram community chat: https://t.me/CompaneroChat
+- Support: https://t.me/CompaneroSupport
+- GitHub: https://github.com/kopytovskiy/companero-bot

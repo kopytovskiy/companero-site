@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
 <html class="no-js" lang="en">
 
 <head>
@@ -14,22 +13,30 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="About Companero - Our Open Source Ridesharing Story" />
     <meta property="og:description" content="From a small-town solution to a global open-source ridesharing platform: the Companero story." />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="https://companero.io/assets/images/about/author-3.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://companero.io/about" />
     <meta property="og:site_name" content="Companero" />
     <meta property="og:locale" content="en_US" />
-    
+    <meta property="article:author" content="Maksym Kopytovskyi" />
+    <meta property="article:published_time" content="2023-01-01T00:00:00Z" />
+    <meta property="article:modified_time" content="2026-03-23T00:00:00Z" />
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="About Companero - Our Story" />
     <meta name="twitter:description" content="From a small-town solution to a global open-source ridesharing platform: the Companero story." />
     <meta name="twitter:image" content="https://companero.io/assets/images/about/author-3.png" />
-    
+
     <link rel="canonical" href="https://companero.io/about" />
-    <link rel="alternate" href="https://companero.io/about" hreflang="en" />
-    <link rel="alternate" href="https://companero.io/about" hreflang="x-default" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="assets/images/about/author-3.png" fetchpriority="high" />
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -57,6 +64,8 @@
           "@id": "https://companero.io/about#aboutpage",
           "url": "https://companero.io/about",
           "name": "About Companero",
+          "datePublished": "2023-01-01",
+          "dateModified": "2026-03-23",
           "isPartOf": {
             "@id": "https://companero.io/#website"
           }
@@ -66,7 +75,12 @@
           "@id": "https://companero.io/#organization",
           "name": "Companero",
           "url": "https://companero.io/",
-          "logo": "https://companero.io/assets/images/logo/logo.webp",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://companero.io/assets/images/logo/logo.webp"
+          },
+          "description": "Companero is a free, open-source ridesharing platform operating via Telegram with zero commission fees, supporting communities worldwide.",
+          "foundingDate": "2023",
           "sameAs": [
             "https://github.com/kopytovskiy/companero-bot",
             "https://www.instagram.com/companero.io",
@@ -76,14 +90,60 @@
         },
         {
           "@type": "Person",
+          "@id": "https://companero.io/about#founder",
           "name": "Maksym Kopytovskyi",
+          "givenName": "Maksym",
+          "familyName": "Kopytovskyi",
+          "alternateName": "Max",
           "jobTitle": "Founder",
+          "description": "Software developer and founder of Companero, an open-source ridesharing platform built on Telegram, created in 2023 to serve communities underserved by commercial ride apps.",
+          "url": "https://companero.io/about",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://companero.io/assets/images/about/author-3.png"
+          },
+          "homeLocation": {
+            "@type": "Place",
+            "name": "Kyiv, Ukraine"
+          },
           "worksFor": {
             "@id": "https://companero.io/#organization"
           },
           "sameAs": [
             "https://github.com/kopytovskiy"
           ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://companero.io/about#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://companero.io/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About",
+              "item": "https://companero.io/about"
+            }
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://companero.io/about#sourcecode",
+          "name": "companero-bot",
+          "description": "Open-source Telegram ridesharing bot. Connects drivers and passengers in communities underserved by commercial apps. Supports 6 languages.",
+          "codeRepository": "https://github.com/kopytovskiy/companero-bot",
+          "runtimePlatform": "Telegram Bot API",
+          "author": {
+            "@id": "https://companero.io/about#founder"
+          },
+          "isPartOf": {
+            "@id": "https://companero.io/#app"
+          }
         },
         {
           "@type": "FAQPage",
@@ -252,7 +312,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-12">
                     <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">FAQ</h3>
+                        <p class="section-label wow zoomIn" data-wow-delay=".2s">FAQ</p>
                         <h2 class="wow fadeInUp" data-wow-delay=".4s">Frequently Asked Questions</h2>
                     </div>
                     <div class="accordion wow fadeInUp" data-wow-delay=".6s" id="aboutFaqAccordion">
@@ -346,7 +406,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">Our Dream Team</h3>
+                        <p class="section-label wow zoomIn" data-wow-delay=".2s">Our Dream Team</p>
                         <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our Contributors</h2>
                         <div class="center">
                             <img class="wow zoomIn profile-photo-small" data-wow-delay=".6s" src="assets/images/about/author-3.png" alt="Maksym Kopytovskyi profile photo" loading="lazy" decoding="async">
@@ -401,7 +461,6 @@
                                 <li><a href="https://www.facebook.com/61561244200934/"><i class="lni lni-facebook-filled"></i></a></li>
                             </ul>
                             <p class="copyright-text">Designed and Developed by <a href="https://uideck.com/"
-                                    rel="nofollow" target="_blank">UIdeck</a>
                                     rel="nofollow noopener noreferrer" target="_blank">UIdeck</a>
                                     <br>
                                     Modified by Companero
@@ -456,24 +515,25 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
-    <script src="assets/js/about.js"></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/wow.min.js" defer></script>
+    <script src="assets/js/tiny-slider.js" defer></script>
+    <script src="assets/js/glightbox.min.js" defer></script>
+    <script src="assets/js/count-up.min.js" defer></script>
+    <script src="assets/js/about.js" defer></script>
 
     <script type="text/javascript">
-
-        //====== counter up 
-        var cu = new counterUp({
-            start: 0,
-            duration: 2000,
-            intvalues: true,
-            interval: 100,
-            append: " ",
+        document.addEventListener('DOMContentLoaded', function () {
+            //====== counter up
+            var cu = new counterUp({
+                start: 0,
+                duration: 2000,
+                intvalues: true,
+                interval: 100,
+                append: " ",
+            });
+            cu.start();
         });
-        cu.start();
     </script>
 </body>
 
